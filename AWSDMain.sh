@@ -29,6 +29,7 @@ sudo chkconfig noip on
   echo "Please run sudo noip2 -C to customize noip settings"
   echo ""
 
+fi
 
 
 # Docker Installation
