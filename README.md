@@ -13,6 +13,10 @@ sudo chmod +x AWSDMain.sh
 
 ./AWSMain.sh
 
+
+If you want to configure noip: Please run "sudo noip2 -C" to customize noip settings after running the script
+
+
 Tested on a t1.micro AMI
 
 @FabioChiodini
