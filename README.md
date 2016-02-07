@@ -7,7 +7,11 @@ HOW TO USE:
 
 git clone https://github.com/FabioChiodini/AWSDockermachine
 
-./AWSDockermachine/AWSDMain.sh
+cd AWSDockermachine
+
+sudo chmod +x AWSDMain.sh
+
+./AWSMain.sh
 
 Tested on a t1.micro AMI
 
