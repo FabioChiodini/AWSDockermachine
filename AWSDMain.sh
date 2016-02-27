@@ -5,7 +5,7 @@
 updatenoip=1
 updatedocker=1
 updatedockermachine=1
-
+updatedockerswarm=0
 updatedockercompose=0
 updatedockerswarm=0
 
@@ -91,8 +91,18 @@ fi
 # Now install Docker-Swarm: https://github.com/docker/swarm/releases
 if [ $updatedockerswarm -eq 1 ]; then
   echo ""
-  echo "Installing Docker Swarm versionn"
+  echo "Installing Docker Swarm version"
   echo ""
+  echo "Installing GO Version 1.4.2"
+  sudo wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
+  tar -xzf go1.4.2.linux-amd64.tar.gz 
+  export GOROOT=/home/ec2-user/go
+  export PATH=$PATH:$GOROOT/bin 
+  export GOBIN=$GOROOT/bin 
+  sudo mkdir ~/golang/ 
+  export GOPATH=~/golang/ 
+  export PATH=$GOPATH/bin:$PATH 
+  
   pushd /opt >> /dev/null
   goworkspacepath="/opt/goworkspace/"
   if [ ! -e $goworkspacepath ]; then
