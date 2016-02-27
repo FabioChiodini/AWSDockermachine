@@ -9,7 +9,7 @@ git clone https://github.com/FabioChiodini/AWSDockermachine
 
 cd AWSDockermachine
 
-sudo chmod +x AWSDMain.sh
+
 
 ./AWSMain.sh
 
