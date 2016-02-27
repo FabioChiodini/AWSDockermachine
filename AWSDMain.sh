@@ -106,29 +106,29 @@ if [ $updatedockerswarm -eq 1 ]; then
     echo "Done Installing GO "
     echo ""
   fi
-  pushd /opt >> /dev/null
+  sudo pushd /opt >> /dev/null
   goworkspacepath="/opt/goworkspace/"
   if [ ! -e $goworkspacepath ]; then
-      mkdir $goworkspacepath >> /dev/null
-      chmod 777 $goworkspacepath >> /dev/null
+      sudo mkdir $goworkspacepath >> /dev/null
+      sudo chmod 777 $goworkspacepath >> /dev/null
   fi
   export GOPATH=$goworkspacepath
   echo " - Using GOPATH($GOPATH) set this in ./common.sh if you want to override"
-  go get github.com/docker/swarm
-  chmod 777 $GOPATH/bin/swarm
+  sudo go get github.com/docker/swarm
+  sudo chmod 777 $GOPATH/bin/swarm
 
-  rm -f /usr/local/bin/swarm >> /dev/null
-  ln -s $GOPATH/bin/swarm /usr/local/bin/swarm
+  sudo rm -f /usr/local/bin/swarm >> /dev/null
+  sudo ln -s $GOPATH/bin/swarm /usr/local/bin/swarm
 
-  pushd >> /dev/null
+  sudo pushd >> /dev/null
   echo ""
   echo "Done Installing Docker Swarm "
   echo ""
 fi
 
 echo ""
-  echo "Done Installing.. Have a great day!! "
-  echo ""
+echo "Done Installing.. Have a great day!! "
+echo ""
 
 
 
