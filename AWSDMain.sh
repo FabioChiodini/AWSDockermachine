@@ -102,6 +102,9 @@ if [ $updatedockerswarm -eq 1 ]; then
     sudo mkdir ~/golang/ 
     export GOPATH=~/golang/ 
     export PATH=$GOPATH/bin:$PATH 
+    echo ""
+    echo "Done Installing GO "
+    echo ""
   fi
   pushd /opt >> /dev/null
   goworkspacepath="/opt/goworkspace/"
