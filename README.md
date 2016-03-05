@@ -1,7 +1,13 @@
 # AWSDockermachine
 Script to install all Docker machine components on AMI
 
-Please run "sudo yum install -y git" in the AMI before launching 
+The script installs
+noip
+Docker-machine
+
+It could also optionally (set flag=1)  install go in the AMI
+
+Please run "sudo yum install -y git" in the AMI BEFORE launching 
 
 HOW TO USE:
 
