@@ -5,7 +5,7 @@ The script installs
 noip
 Docker-machine
 
-It could also optionally (set flag=1)  install go in the AMI
+It could also optionally (set the appropriate flag=1)  install go in the AMI
 
 Please run "sudo yum install -y git" in the AMI BEFORE launching 
 
@@ -17,7 +17,7 @@ cd AWSDockermachine
 
 
 
-./AWSMain.sh
+./AWSDMain.sh
 
 
 If you want to configure noip: Please run "sudo noip2 -C" to customize noip settings after running the script
