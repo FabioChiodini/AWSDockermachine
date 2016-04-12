@@ -13,13 +13,16 @@ Please run "sudo yum install -y git" in the AMI **BEFORE** launching
 
 ## HOW TO USE:
 
+Download the code and exceute it :)
+
+```
 git clone https://github.com/FabioChiodini/AWSDockermachine
 
 cd AWSDockermachine
 
-
-
 ./AWSDMain.sh
+
+```
 
 ## noip Configuration
 
