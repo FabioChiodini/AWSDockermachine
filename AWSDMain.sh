@@ -62,7 +62,7 @@ if [ $updatedockermachine -eq 1 ]; then
   echo ""
   echo ""
 
-curl -L https://github.com/docker/machine/releases/download/v0.6.0/docker-machine-`uname -s`-`uname -m` > docker-machine
+curl -L https://github.com/docker/machine/releases/download/v0.10.0/docker-machine-`uname -s`-`uname -m` > docker-machine
 
 sudo mv -f docker-machine* /usr/local/bin
 
