@@ -25,6 +25,7 @@ cd AWSDockermachine
 ./AWSDMain.sh
 
 ```
+Reboot the AMI aftre installation to check that all services start up correctly (noip registration)
 
 ## noip Configuration
 
