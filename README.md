@@ -4,7 +4,7 @@ Script to install all Docker machine components on AMI
 The script installs (and configures)
 - noip
 - Docker
-- Docker-machine
+- Docker-machine (v 0.10.0)
 - [Optional] go
 
 It also configure these services to run at startup
@@ -25,7 +25,7 @@ cd AWSDockermachine
 ./AWSDMain.sh
 
 ```
-Reboot the AMI aftre installation to check that all services start up correctly (noip registration)
+Reboot the AMI after installation to check that all services start up correctly (noip registration)
 
 ## noip Configuration
 
