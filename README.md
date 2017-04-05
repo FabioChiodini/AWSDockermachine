@@ -33,7 +33,7 @@ If you want to configure noip: please run "sudo noip2 -C" to customize noip sett
 
 This will populate the configuration file
 
-noipservices will run automatically at every reboot
+noip services will run automatically at every reboot
 
 Tested on a t1.micro AMI
 
