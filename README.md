@@ -31,7 +31,7 @@ Reboot the AMI after installation to check that all services start up correctly 
 
 If you want to configure noip: please run "sudo noip2 -C" to customize noip settings after running the script
 
-This will populate the configuration file
+This will populate the configuration file with your account and settings
 
 noip services will run automatically at every reboot
 
