@@ -5,6 +5,7 @@ The script installs (and configures)
 - noip
 - Docker
 - Docker-machine (v 0.10.0)
+- Helm Client (latest)
 - [Optional] go
 
 It also configure these services to run at startup
