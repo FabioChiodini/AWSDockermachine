@@ -6,6 +6,7 @@ updatenoip=1
 updatedocker=1
 updatedockermachine=1
 installhelmclient=1
+intallpython2=1
 installgo=0
 updatedockerswarm=0
 updatedockercompose=0
@@ -82,6 +83,14 @@ if [ $installhelmclient -eq 1 ]; then
   curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
   chmod 700 get_helm.sh
   sudo ./get_helm.sh
+fi
+
+# Python2 Installation
+if [ $intallpython2 -eq 1 ]; then
+  echo ""
+  echo "Installing Python2"
+  echo ""
+  sudo yum install python2
 fi
 
 # Now install Docker-Compose: https://github.com/docker/compose/releases/
