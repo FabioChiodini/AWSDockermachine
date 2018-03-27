@@ -5,6 +5,7 @@
 updatenoip=1
 updatedocker=1
 updatedockermachine=1
+installhelmclient=1
 installgo=0
 updatedockerswarm=0
 updatedockercompose=0
@@ -73,7 +74,15 @@ sudo chmod +x /usr/local/bin/docker-machine
   echo ""
 fi
 
-
+# Helmclient Installation
+if [ $installhelmclient -eq 1 ]; then
+  echo ""
+  echo "Installing Helm Client"
+  echo ""
+  curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
+  chmod 700 get_helm.sh
+  sudo ./get_helm.sh
+fi
 
 # Now install Docker-Compose: https://github.com/docker/compose/releases/
 if [ $updatedockercompose -eq 1 ]; then
