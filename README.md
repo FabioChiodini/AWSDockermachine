@@ -6,6 +6,7 @@ The script installs (and configures)
 - Docker
 - Docker-machine (v 0.10.0)
 - Helm Client (latest)
+- Python2 (latest)
 - [Optional] go
 
 It also configure these services to run at startup
