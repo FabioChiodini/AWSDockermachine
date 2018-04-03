@@ -49,6 +49,8 @@ These are the ones that are working (others are WIP):
 updatenoip=1
 updatedocker=1
 updatedockermachine=1
+installhelmclient=1
+intallpython2=0
 installgo=0
 ```
 Set a flag to 1 to have that component installed and configured
