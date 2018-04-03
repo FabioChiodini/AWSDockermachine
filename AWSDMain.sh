@@ -90,7 +90,7 @@ if [ $intallpython2 -eq 1 ]; then
   echo ""
   echo "Installing Python2"
   echo ""
-  sudo yum install python2
+  sudo yum install -y python2
 fi
 
 # Now install Docker-Compose: https://github.com/docker/compose/releases/
