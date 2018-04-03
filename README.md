@@ -1,5 +1,5 @@
 # AWSDockermachine
-Script to install all Docker machine components on AMI
+Script to install all Docker machine and Kubernetes components on AMI
 
 The script installs (and configures)
 - noip
