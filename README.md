@@ -6,6 +6,7 @@ The script installs (and configures)
 - Docker
 - Docker-machine (v 0.10.0)
 - Helm Client (latest)
+- cf cli (latest)
 - Python2 (latest)
 - [Optional] go
 
@@ -50,6 +51,7 @@ updatenoip=1
 updatedocker=1
 updatedockermachine=1
 installhelmclient=1
+installcfcli=1
 intallpython2=0
 installgo=0
 ```
