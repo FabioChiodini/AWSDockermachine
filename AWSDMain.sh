@@ -6,7 +6,8 @@ updatenoip=1
 updatedocker=1
 updatedockermachine=1
 installhelmclient=1
-intallpython2=0
+installcfcli=1
+installpython2=0
 installgo=0
 updatedockerswarm=0
 updatedockercompose=0
@@ -85,8 +86,17 @@ if [ $installhelmclient -eq 1 ]; then
   sudo ./get_helm.sh
 fi
 
+# cf CLI Installation
+if [ $installcfcli -eq 1 ]; then
+  echo ""
+  echo "Installing cf cli"
+  echo ""
+  sudo wget -O /etc/yum.repos.d/cloudfoundry-cli.repo https://packages.cloudfoundry.org/fedora/cloudfoundry-cli.repo
+  sudo yum install cf-cli -y
+fi
+
 # Python2 Installation
-if [ $intallpython2 -eq 1 ]; then
+if [ $installpython2 -eq 1 ]; then
   echo ""
   echo "Installing Python2"
   echo ""
